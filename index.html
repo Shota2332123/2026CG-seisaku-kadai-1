@@ -6,36 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
-    /* 全体の基本設定 */
-    body {
-      font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fffaf5;
-      color: #333;
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    .container, main {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    /* ヘッダー */
-    header {
-      padding: 20px 0;
-      background-color: #fff;
-      border-bottom: 1px solid #ddd;
-      text-align: center;
-    }
-
-    header img {
-      max-width: 300px;
-      height: auto;
-    }
-
     /* ナビゲーション横並び */
     nav ul {
       display: flex;
@@ -53,7 +23,6 @@
       text-decoration: none;
       color: #333;
       font-weight: bold;
-      font-size: 1.1rem;
     }
 
     nav li a:hover {
@@ -67,82 +36,38 @@
       max-height: 400px;
       object-fit: cover;
       display: block;
-      border-radius: 8px;
-      margin-bottom: 20px;
     }
 
-    .hero-text {
-      text-align: center;
-    }
-
-    .hero-text h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-
-    .hero-text p {
-      font-size: 1.2rem;
-    }
-
-    /* 人気メニュー */
-    article h2 {
-      font-size: 1.8rem;
-      margin-top: 40px;
-      text-align: center;
-    }
-
-    .menu-grid {
+    /* 人気メニューの横並び */
+    article section {
       display: flex;
-      gap: 40px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 20px;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 40px;
     }
 
-    .menu-card {
+    article section img {
       width: 300px;
-      text-align: center;
-      font-size: 1.1rem;
-    }
-
-    .menu-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
-
-    .menu-card h3 {
-      font-size: 1.4rem;
-      margin: 10px 0 5px;
-    }
-
-    .menu-card p {
-      font-size: 1rem;
-      color: #444;
-    }
-
-    /* お知らせ */
-    aside {
-      background-color: #f0f0f0;
-      padding: 20px;
-      margin-top: 40px;
+      height: auto;
       border-radius: 8px;
     }
 
-    aside h2 {
-      font-size: 1.4rem;
-      margin-bottom: 10px;
+    article section p {
+      flex: 1;
     }
 
-    /* フッター */
+    /* 全体の幅を整える */
+    .container, main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
     footer {
       text-align: center;
       margin-top: 40px;
       padding: 20px;
       background-color: #f0f0f0;
-      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -162,10 +87,10 @@
     </ul>
   </nav>
 
-  <main class="container">
+  <main>
     <section class="hero">
       <img src="店内.jpg" alt="店内の様子">
-      <div class="hero-text">
+      <div>
         <h2>ようこそ、Wine Bar Chiba Techへ</h2>
         <p>千葉の夜に、イタリアの香りを。</p>
       </div>
@@ -173,18 +98,22 @@
 
     <article>
       <h2>人気メニュー</h2>
-      <div class="menu-grid">
-        <div class="menu-card">
-          <img src="国産牛ローストビーフオニオンソース.jpg" alt="ローストビーフの料理">
+
+      <section>
+        <img src="国産牛ローストビーフオニオンソース.jpg" alt="ローストビーフの料理">
+        <div>
           <h3>国産牛ローストビーフオニオンソース</h3>
           <p>国産のお肉に特性のオニオンソースが大人気。</p>
         </div>
-        <div class="menu-card">
-          <img src="カルボナーラ.webp" alt="カルボナーラのパスタ">
+      </section>
+
+      <section>
+        <img src="カルボナーラ.PNG" alt="カルボナーラのパスタ">
+        <div>
           <h3>カルボナーラ</h3>
           <p>濃厚なソースが自慢の手打ちパスタ。</p>
         </div>
-      </div>
+      </section>
     </article>
 
     <aside>
