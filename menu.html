@@ -5,6 +5,49 @@
   <title>メニュー | Wine Bar Chiba Tech</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* メニュー専用の整理スタイル */
+    .grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    .grid-item {
+      width: 300px; /* カード幅を統一 */
+      text-align: center;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 15px;
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 200px; /* 高さを固定して統一 */
+      object-fit: cover; /* 枠に合わせて切り取り */
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .grid-item h2 {
+      font-size: 1.4rem;
+      margin: 10px 0 5px;
+    }
+
+    .grid-item p {
+      font-size: 1rem;
+      margin: 5px 0;
+      color: #444;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #900;
+    }
+  </style>
 </head>
 <body>
   <!-- ヘッダー -->
@@ -24,9 +67,8 @@
 
   <!-- メインコンテンツ -->
   <main>
-    <h1>メニュー</h1>
+    <h1 style="text-align:center;">メニュー</h1>
     <div class="grid-container">
-      
       <div class="grid-item">
         <img src="カルボナーラ.PNG" alt="カルボナーラ">
         <h2>カルボナーラ</h2>
@@ -45,24 +87,18 @@
         <p>イタリア伝統のデザート。食後にぴったり。</p>
         <p class="price">¥600</p>
       </div>
-
-      
       <div class="grid-item">
         <img src="マルゲリータ.PNG" alt="マルゲリータピザ">
         <h2>マルゲリータピザ</h2>
         <p>トマト・モッツァレラ・バジルの王道イタリアン。</p>
         <p class="price">¥1,500</p>
       </div>
-
-      
       <div class="grid-item">
         <img src="シーフードリゾット.PNG" alt="シーフードリゾット">
         <h2>シーフードリゾット</h2>
         <p>魚介の旨みをたっぷり閉じ込めた贅沢な一皿。</p>
         <p class="price">¥1,700</p>
       </div>
-
-      
       <div class="grid-item">
         <img src="パンナコッタ.PNG" alt="パンナコッタ">
         <h2>パンナコッタ</h2>
